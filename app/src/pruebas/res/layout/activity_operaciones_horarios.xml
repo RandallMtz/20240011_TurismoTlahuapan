@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueMain"
+    tools:context=".ActivityOperacionesHorarios">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_edittext"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/TextVTituloHorariosOp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="75dp"
+                                android:fontFamily="@font/baloo"
+                                android:gravity="center"
+                                android:text="Horarios"
+                                android:textColor="@color/black"
+                                android:textSize="35sp" />
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="50dp"
+                                android:layout_height="55dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="0"
+                                android:src="@drawable/newlogo" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/SpinnerIdLugarHorariosOp"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:spinnerMode="dialog" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextVHorarioBuscarOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:visibility="gone"
+                            tools:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/SpinnerDiaHorariosOp"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:spinnerMode="dialog" />
+
+                        <Button
+                            android:id="@+id/ButtonHorarioBuscarOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="0"
+                            android:text="Buscar"
+                            android:drawableRight="@drawable/baseline_search_24"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp"
+                            app:iconGravity="end"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTHoraInHorarioOp"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:background="@drawable/custom_edittext"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/baseline_access_time_24_black"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="Hora de inicio"
+                            android:inputType="none"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TxNombreOp" />
+
+                        <Button
+                            android:id="@+id/ButtonLimpiarCamposHorarioOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="0"
+                            android:textSize="15sp"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp"
+                            app:icon="@android:drawable/ic_delete"
+                            android:drawableRight="@drawable/baseline_calendar_month_24"
+                            app:iconGravity="textTop"
+                            app:iconSize="40sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTHoraFinHorariosOp"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:ems="10"
+                            android:hint="Hora de fin"
+                            android:drawableRight="@drawable/baseline_access_time_24_black"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:inputType="none"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TxApePatOp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/ButtonInsertarHorarioOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Registrar"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp" />
+
+                        <Button
+                            android:id="@+id/ButtonModificarHorarioOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Modificar"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp"
+                            app:layout_constraintStart_toEndOf="@+id/BtInsertarUsuario"
+                            app:layout_constraintTop_toBottomOf="@+id/TxNivAdmiOp" />
+
+                        <Button
+                            android:id="@+id/ButtonEliminarHorarioOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:text="Eliminar"
+                            android:textSize="13sp"
+                            app:backgroundTint="@color/blueSecond"
+                            android:textColor="@color/black"
+                            app:cornerRadius="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/BtModificarAnimalOp"
+                            app:layout_constraintTop_toBottomOf="@+id/TxNivAdmiOp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

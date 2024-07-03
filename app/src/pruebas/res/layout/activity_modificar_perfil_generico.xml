@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueMain"
+    android:layout_gravity="center_vertical"
+    tools:context=".ActivityModificarPerfilGenerico">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_edittext"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextVTituloModificarPerfilGenerico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:text="Modificar perfil"
+                            android:textColor="@color/black"
+                            android:textSize="35sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="50dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/newlogo" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTUsuarioModificarPerfilGenerico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_edittext"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Nombre de usuario"
+                            android:inputType="text"
+                            android:maxLength="11"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/EditTNombresModificarPerfilGenerico"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:ems="10"
+                            android:hint="Nombre(s)"
+                            android:maxLength="30"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:inputType="text"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTApePatModificarPerfilGenerico"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:ems="10"
+                            android:hint="Apellido paterno"
+                            android:maxLength="20"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:inputType="text"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTApeMatModificarPerfilGenerico"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:ems="10"
+                            android:hint="Apellido materno"
+                            android:maxLength="20"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:inputType="text"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTCorreoModificarPerfilGenerico"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:background="@drawable/custom_edittext"
+                            android:editable="false"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:hint="Correo electrónico"
+                            android:inputType="text|textEmailAddress"
+                            android:maxLength="50"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditT1erTelefonoModificarPerfilGenerico"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:ems="10"
+                            android:hint="Teléfono (Principal)"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTContraseñaModificarPerfilGenerico"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:drawableRight="@drawable/baseline_visibility_off_24"
+                            android:ems="10"
+                            android:hint="Contraseña"
+                            android:maxLength="8"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:inputType="text|textPassword"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/BtModificarModificarPerfilGenerico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="90dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginEnd="90dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Modificar"
+                            android:textSize="13sp"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp"
+                            app:layout_constraintStart_toEndOf="@+id/BtInsertarUsuario"
+                            app:layout_constraintTop_toBottomOf="@+id/TxNivAdmiOp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/UsuariosAdministrador"
+        android:title="Usuarios"
+        android:icon="@drawable/baseline_person_24"/>
+
+    <item
+        android:id="@+id/ServiciosAdministrador"
+        android:title="Servicios"
+        android:icon="@drawable/baseline_design_services_24" />
+
+    <item
+        android:id="@+id/CensosAdministrador"
+        android:title="Censos"
+        android:icon="@drawable/baseline_library_books_24" />
+
+</menu>

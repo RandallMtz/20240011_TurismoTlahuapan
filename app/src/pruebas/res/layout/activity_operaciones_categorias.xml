@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueMain"
+    tools:context=".ActivityOperacionesCategorias">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/custom_edittext"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextVTituloCategoriasOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:paddingLeft="75dp"
+                            android:text="Categorías"
+                            android:textColor="@color/black"
+                            android:textSize="35sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="50dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/newlogo" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextVCategoriasBuscarOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView"
+                            android:visibility="gone"
+                            tools:visibility="gone" />
+
+                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/SpinnerCategoriasBuscar"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_edittext"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:spinnerMode="dialog" />
+
+                        <Button
+                            android:id="@+id/ButtonBuscarCategoriasOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="0"
+                            android:text="Buscar"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp"
+                            android:drawableRight="@drawable/baseline_search_24"
+                            app:iconGravity="end"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/EditTCategoriaOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Categoría"
+                            android:background="@drawable/custom_edittext"
+                            android:padding="10dp"
+                            android:inputType="text"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TxAnimalBuscarOp" />
+
+                        <Button
+                            android:id="@+id/ButtonLimpiarCamposCategoriasOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="0"
+                            android:textSize="15sp"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp"
+                            app:icon="@android:drawable/ic_delete"
+                            app:iconGravity="textTop"
+                            app:iconSize="40sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center|center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ImgVFotografiaOperacionesCategorias"
+                            android:layout_width="150dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                        <Button
+                            android:id="@+id/BtSeleccionarImagenOperacionesCategorias"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:text="Elegir \n imagen"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/ButtonInsertarCategoriasOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Registrar"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp" />
+
+                        <Button
+                            android:id="@+id/ButtonModificarCategoriasOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Modificar"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"
+                            app:backgroundTint="@color/blueSecond"
+                            app:cornerRadius="15dp" />
+
+                        <Button
+                            android:id="@+id/ButtonEliminarCategoriasOp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:text="Eliminar"
+                            android:textSize="13sp"
+                            app:backgroundTint="@color/blueSecond"
+                            android:textColor="@color/black"
+                            app:cornerRadius="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

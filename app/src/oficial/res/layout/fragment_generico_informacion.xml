@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="75dp"
+    tools:context=".FragmentGenericoInformacion">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ImageVReferencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/portadatlahuapan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextVQuienesSomosReferencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center|center_vertical|center_horizontal"
+                    android:text="¿Quiénes somos?"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TextVDescripcionReferencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/style_border_edittext"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="sans-serif-medium"
+                    android:shadowRadius="10"
+                    android:text="El municipio de Santa Rita Tlahuapan se localiza en la parte centro-oeste del estado de Puebla, ocupa el 0.91% de la superficie del estado; tiene una altitud promedio de 2,640 metros sobre el nivel del mar; sus coordenadas geográficas son: los paralelos 19º15'36&quot; y 19º27'54&quot; de latitud norte y los meridianos 98º29'18&quot; y 98º40'06&quot; de longitud occidental. \n \nEl municipio colinda al Norte con el estado de Tlaxcala, al Sur con el municipio de San Salvador el Verde, al Este con los municipios de San Matías Tlalancaleca y el estado de Tlaxcala, al Oeste con el estado de México y Volcán Iztaccíhuatl.\n\nLa presente app fue desarrollada por personal de tiempo completo y estudiante adscritos a la carrera de Ingeniería en Sistemas Computacionales del Instituto Tecnológico Superior de San Martín Texmelucan como resultado de la alianza formada con la Dirección de Turismo y la Presidencia del Municipio de Santa Rita Tlahuapan.
+
+ITSSMT Camino a la Barranca de Pesos s/n, San Lucas Atoyatenco, 74120 San Martín Texmelucan de Labastida, Pue.
+Presidencia de Tlahuapan 74100, Centro, Santa Rita Tlahuapan, Pue."
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

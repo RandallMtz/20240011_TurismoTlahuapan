@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueMain"
+    tools:context=".ActivityOperacionesUsuariosAdministrativo">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/custom_edittext"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView0"
+                        android:layout_width="55dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="55dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/itssmt" />
+
+                    <TextView
+                        android:id="@+id/TextVTituloUsuariosOp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:text="Usuarios"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="50dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/newlogo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TextVUsuarioBuscarOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:visibility="gone" />
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/SpinnerUsuariosBuscar"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_edittext"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:spinnerMode="dialog" />
+
+                    <Button
+                        android:id="@+id/ButtonUsuarioBuscarOp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="0"
+                        android:text="Buscar"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/blueSecond"
+                        app:cornerRadius="15dp"
+                        android:drawableRight="@drawable/baseline_search_24"
+                        app:iconGravity="end"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditTNombreUsuarioOp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Nombre de usuario"
+                        android:background="@drawable/custom_edittext"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TxAnimalBuscarOp" />
+
+                    <Button
+                        android:id="@+id/ButtonLimpiarCamposUsuarioOp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_weight="0"
+                        android:textSize="15sp"
+                        app:backgroundTint="@color/blueSecond"
+                        app:cornerRadius="15dp"
+                        app:icon="@android:drawable/ic_delete"
+                        app:iconGravity="textTop"
+                        app:iconSize="40sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditTNombresUsuarioOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:hint="Nombre(s)"
+                        android:background="@drawable/custom_edittext"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TxAnimalBuscarOp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditTApellidoPatUsuarioOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:hint="Apellido paterno"
+                        android:background="@drawable/custom_edittext"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TxNombreOp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditTApellidoMatUsuarioOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:hint="Apellido materno"
+                        android:background="@drawable/custom_edittext"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TxApePatOp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditTTelefonoUsuarioOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginRight="32dp"
+                        android:background="@drawable/custom_edittext"
+                        android:ems="10"
+                        android:drawableRight="@drawable/baseline_local_phone_24"
+                        android:hint="Teléfono"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TxFechaOp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start|center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/EditTCorreoElectronicoUsuarioOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:hint="Correo electrónico"
+                        android:drawableRight="@drawable/baseline_alternate_email_24"
+                        android:background="@drawable/custom_edittext"
+                        android:padding="10dp"
+                        android:inputType="text|textEmailAddress"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/EditTContraseñaUsuarioOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginRight="32dp"
+                        android:ems="10"
+                        android:maxLength="8"
+                        android:hint="Contraseña"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableRight="@drawable/baseline_visibility_off_24"
+                        android:padding="10dp"
+                        android:inputType="text|textPassword"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TxLocalidadOp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|start|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/SpNivelUsuarioOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ButtonInsertarUsuarioOp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="Registrar"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/blueSecond"
+                        app:cornerRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/ButtonModificarUsuarioOp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="Modificar"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@color/blueSecond"
+                        app:cornerRadius="15dp"
+                        app:layout_constraintStart_toEndOf="@+id/BtInsertarUsuario"
+                        app:layout_constraintTop_toBottomOf="@+id/TxNivAdmiOp" />
+
+                    <Button
+                        android:id="@+id/ButtonEliminarUsuarioOp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Eliminar"
+                        android:textSize="13sp"
+                        app:backgroundTint="@color/blueSecond"
+                        android:textColor="@color/black"
+                        app:cornerRadius="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/BtModificarAnimalOp"
+                        app:layout_constraintTop_toBottomOf="@+id/TxNivAdmiOp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
